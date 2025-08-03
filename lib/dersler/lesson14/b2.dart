@@ -1,40 +1,43 @@
 import 'package:flutter/material.dart';
-import 'b3.dart';
+import 'b3.dart'; // Kucuk widget'ını al
 
 class Orta extends StatelessWidget {
   const Orta({super.key});
 
   @override
   Widget build(BuildContext context) {
+    double ekranGenisligi = MediaQuery.of(context).size.width;
+    double ekranYuksekligi = MediaQuery.of(context).size.height;
+    double appBarYuksekligi = 50;
+
     return Column(
       children: [
         Container(
-          width: MediaQuery.of(context).size.width -100,
-          height: (MediaQuery.of(context).size.height -50) /5,
-          color: Colors.orangeAccent ,
-          child: Kucuk(),
+          width: ekranGenisligi - 100,
+          height: (ekranYuksekligi - appBarYuksekligi) / 5,
+          color: Colors.orangeAccent,
+          child: const Kucuk(),  // b3.dart'taki yatay kaydırılabilir küçük metin
         ),
         Container(
-          width: MediaQuery.of(context).size.width -100,
-          height: (MediaQuery.of(context).size.height -50)/5,
-          color: Colors.pink ,
+          width: ekranGenisligi - 100,
+          height: (ekranYuksekligi - appBarYuksekligi) / 5,
+          color: Colors.pink,
         ),
         Container(
-          width: MediaQuery.of(context).size.width -100,
-          height: (MediaQuery.of(context).size.height -50) /5,
-          color: Colors.pinkAccent ,
+          width: ekranGenisligi - 100,
+          height: (ekranYuksekligi - appBarYuksekligi) / 5,
+          color: Colors.pinkAccent,
         ),
         Container(
-          width: MediaQuery.of(context).size.width -100,
-          height: (MediaQuery.of(context).size.height -50) /5,
-          color: Colors.purple ,
+          width: ekranGenisligi - 100,
+          height: (ekranYuksekligi - appBarYuksekligi) / 5,
+          color: Colors.purple,
         ),
         Container(
-          width: MediaQuery.of(context).size.width -100,
-          height: (MediaQuery.of(context).size.height -50) /5,
-          color: Colors.purpleAccent ,
-        )
-        
+          width: ekranGenisligi - 100,
+          height: (ekranYuksekligi - appBarYuksekligi) / 5,
+          color: Colors.purpleAccent,
+        ),
       ],
     );
   }

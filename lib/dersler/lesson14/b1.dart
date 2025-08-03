@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Orta extends StatelessWidget {
-  const Orta({super.key});
+class Orta2 extends StatelessWidget {
+  const Orta2({super.key});
 
   @override
   Widget build(BuildContext context) {

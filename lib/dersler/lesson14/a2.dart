@@ -5,7 +5,7 @@ class Metin extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
+    return const Text(
       "DENEME",
       style: TextStyle(fontSize: 30),
     );

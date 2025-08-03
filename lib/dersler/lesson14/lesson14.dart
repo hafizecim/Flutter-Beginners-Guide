@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial_beginner/dersler/lesson14/b1.dart';
-import 'a1.dart';
-
+import 'a1.dart';  // Ust widget
+import 'b2.dart';  // Orta widget (renkli kolonlar)
 
 class Lesson14 extends StatelessWidget {
   const Lesson14({super.key});
@@ -11,12 +10,11 @@ class Lesson14 extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         appBar: PreferredSize(
-         preferredSize: Size(double.infinity, 50),
-         child: Ust(),),
-        body: Orta(),
-      ), 
+          preferredSize: Size(double.infinity, 50),
+          child: Ust(),
+        ),
+        body: Orta(),  // Burada b2.dart içindeki Orta kullanılıyor
+      ),
     );
   }
 }
-
-
