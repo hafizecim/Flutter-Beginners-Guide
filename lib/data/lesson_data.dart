@@ -26,6 +26,10 @@ import '../dersler/lesson11.dart';
 import '../summary/lesson11_summary.dart';
 import '../dersler/lesson12.dart';
 import '../summary/lesson12_summary.dart';
+import '../dersler/lesson13.dart';
+import '../summary/lesson13_summary.dart';
+import '../dersler/lesson14/lesson14.dart';
+import '../summary/lesson14_summary.dart';
 
 final List<Lesson> lessonList = [
   Lesson(
@@ -99,5 +103,17 @@ final List<Lesson> lessonList = [
     subtitle: 'Flutter da Container içinde farklı BoxFit özellikleriyle resim gösterimi',
     summary: lesson12Summary,
     lessonPage: const Lesson12(),
+  ),
+  Lesson(
+    title: '13. Ders',
+    subtitle: 'Flutter da Row ve Expanded widgetları ile esnek ve karmaşık düzenler oluşturma',
+    summary: lesson13Summary,
+    lessonPage: const Lesson13(),
+  ),
+  Lesson(
+    title: '14. Ders',
+    subtitle: 'Flutter Projelerinde Klasör ve Dosya Organizasyonu: Modüler Yapı ve Bağlantılar',
+    summary: lesson14Summary,
+    lessonPage: const Lesson14(),
   ),
 ];

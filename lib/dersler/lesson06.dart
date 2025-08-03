@@ -43,7 +43,7 @@ class Lesson06 extends StatelessWidget {
                         height: 150,
                         decoration: BoxDecoration(
                           image: DecorationImage(
-                            image: AssetImage("images/resim1.png") )),
+                            image: AssetImage("assets/images/resim1.png") )),
                           
                       ),
                       Text("Detaylı Bilgi"),
