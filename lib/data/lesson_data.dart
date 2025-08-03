@@ -36,6 +36,8 @@ import '../dersler/lesson16/lesson16.dart';
 import '../summary/lesson16_summary.dart';
 import '../dersler/lesson17.dart';
 import '../summary/lesson17_summary.dart';
+import '../dersler/lesson18.dart';
+import '../summary/lesson18_summary.dart';
 
 final List<Lesson> lessonList = [
   Lesson(
@@ -139,5 +141,11 @@ final List<Lesson> lessonList = [
     subtitle: 'Flutter da Yatay Scroll: SingleChildScrollView ve ListView Kullanımı',
     summary: lesson17Summary,
     lessonPage: const Lesson17(),
+  ),
+  Lesson(
+    title: '18. Ders',
+    subtitle: 'Flutter ListView.builder ile Dinamik Liste Oluşturma',
+    summary: lesson18Summary,
+    lessonPage: const Lesson18(),
   ),
 ];
