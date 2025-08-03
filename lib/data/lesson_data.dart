@@ -38,6 +38,9 @@ import '../dersler/lesson17.dart';
 import '../summary/lesson17_summary.dart';
 import '../dersler/lesson18.dart';
 import '../summary/lesson18_summary.dart';
+import '../dersler/lesson19.dart';
+import '../summary/lesson19_summary.dart';
+
 
 final List<Lesson> lessonList = [
   Lesson(
@@ -147,5 +150,11 @@ final List<Lesson> lessonList = [
     subtitle: 'Flutter ListView.builder ile Dinamik Liste Oluşturma',
     summary: lesson18Summary,
     lessonPage: const Lesson18(),
+  ),
+  Lesson(
+    title: '19. Ders',
+    subtitle: 'Flutter ListView.builder ile Dinamik Kart Listesi Oluşturma',
+    summary: lesson19Summary,
+    lessonPage: const Lesson19(),
   ),
 ];

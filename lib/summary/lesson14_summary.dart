@@ -1,16 +1,14 @@
 const String lesson14Summary = '''
 Flutter projelerinde kodu düzenli ve yönetilebilir tutmak için klasörler ve dosyalar organize edilir. Bu yapı, tıpkı bir ağaç gibi dallanır ve birbirine bağlıdır.
 
-- Projede önce ana klasörler oluşturulur (örneğin: lib/, assets/, test/).
-- lib/ klasörü altında, fonksiyonlara ve sayfalara göre alt klasörler oluşturulur: 
-  - models/: Veri modelleri için,
-  - services/: API çağrıları veya iş mantığı için,
-  - pages/ veya screens/: UI ekranları için,
-  - widgets/: Tekrar kullanılabilir bileşenler için.
-- Her dosya, kendi içinde mantıksal birimler içerir ve diğer dosyalardan import edilerek kullanılır.
-- Örneğin, `main.dart` dosyası diğer sayfa dosyalarını ve widgetları import ederek uygulamanın giriş noktası olur.
-- Dosyalar arasında `import` ile bağ kurularak kod bir ağacın dalları gibi organize edilir; böylece kodun bakımı ve geliştirilmesi kolaylaşır.
-- Bu yapı, projeyi büyütürken karmaşıklığı azaltır ve takım çalışmasına olanak sağlar.
+- Bu ders, Flutter projesinde dosya ve widget yapısını modüler şekilde organize etme yöntemini öğretir:
+- Widget Modülerliği: Uygulama arayüzü farklı widget'lara bölünür (Ust, Metin, Orta, Kucuk gibi) ve her biri ayrı dosyada tutulur. Bu, kodun okunabilirliğini ve bakımını artırır.
+- Dosya İçe Aktarma (Import): Widget’lar birbirlerini import ederek birbirine bağlanır. Örneğin, Ust widget'ı içinde Metin widget’ı kullanılır.
+- AppBar ve Body Ayırımı: Lesson14 içinde üstte Ust widget'ı ile AppBar tanımlanırken, gövde kısmında Orta widget'ı yer alır.
+- UI Düzeni: Orta widget’ı içerisinde farklı renkli kutular ve yatay kaydırılabilen metin satırı (Kucuk widget'ı) gösterilmiştir.
+- Yatay Scroll: Kucuk widget’ında SingleChildScrollView ile yatayda kaydırılabilir metin satırı oluşturulmuştur.
+- Medya Sorguları: Ekran genişliği ve yüksekliği MediaQuery ile dinamik olarak alınır ve widget boyutları buna göre ayarlanır.
+- Bu yapı, büyük Flutter projelerinde kodun düzenli, yönetilebilir ve ölçeklenebilir olmasını sağlar.
 
 Sonuç olarak, Flutter’da dosya ve klasör organizasyonu, modüler ve sürdürülebilir uygulamalar geliştirmek için temel yapı taşıdır.
 
