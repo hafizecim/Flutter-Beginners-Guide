@@ -10,7 +10,7 @@ class LessonDetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text(lesson.title)),
-      body: Padding(
+      body: SingleChildScrollView(  // Burada SingleChildScrollView ekledik
         padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -21,7 +21,7 @@ class LessonDetailPage extends StatelessWidget {
             ),
             const SizedBox(height: 12),
             Text(lesson.summary),
-            const Spacer(),
+            const SizedBox(height: 24), // Spacer yerine boşluk verdik
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -29,7 +29,6 @@ class LessonDetailPage extends StatelessWidget {
                   icon: const Icon(Icons.code),
                   label: const Text("Kodu Görüntüle"),
                   onPressed: () {
-                    // Burada istersen AlertDialog ile kod gösterilebilir
                     showDialog(
                       context: context,
                       builder: (_) => AlertDialog(

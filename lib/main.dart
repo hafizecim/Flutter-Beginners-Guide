@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
-import 'models/lesson_model.dart';
-import 'dersler/lesson1.dart';
-import 'dersler/lesson2.dart';
 import 'pages/lesson_detail.dart';
-import 'summary/ders1_summary.dart';
-import 'summary/ders2_summary.dart';
+import 'data/lesson_data.dart'; 
 
 void main() {
   runApp(const MyApp());
@@ -29,30 +25,12 @@ class LessonListPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<Lesson> lessons = [
-      Lesson(
-        title: '1. Ders',
-        subtitle: 'Flutter kurulum ve temel yapı',
-        summary: ders1Summary,
-        lessonPage: const Lesson1(),
-        
-        
-      ),
-      Lesson(
-        title: '2. Ders',
-        subtitle: 'Stateless vs Stateful Widget',
-        summary: ders2Summary,
-        lessonPage: const Lesson2(),
-      ),
-      // Devamını ekle...
-    ];
-
     return Scaffold(
       appBar: AppBar(title: const Text('Flutter Dersleri')),
       body: ListView.builder(
-        itemCount: lessons.length,
+        itemCount: lessonList.length, 
         itemBuilder: (context, index) {
-          final lesson = lessons[index];
+          final lesson = lessonList[index];
           return Card(
             color: Colors.blue.shade50,
             margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
