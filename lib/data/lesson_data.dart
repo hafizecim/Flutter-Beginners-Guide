@@ -34,6 +34,8 @@ import '../dersler/lesson15.dart';
 import '../summary/lesson15_summary.dart';
 import '../dersler/lesson16/lesson16.dart';
 import '../summary/lesson16_summary.dart';
+import '../dersler/lesson17.dart';
+import '../summary/lesson17_summary.dart';
 
 final List<Lesson> lessonList = [
   Lesson(
@@ -131,5 +133,11 @@ final List<Lesson> lessonList = [
     subtitle: 'Flutter da Scroll Edilebilir İçerik ve ListView ile Kart Listesi Oluşturma',
     summary: lesson16Summary,
     lessonPage: const Lesson16(),
+  ),
+  Lesson(
+    title: '17. Ders',
+    subtitle: 'Flutter da Yatay Scroll: SingleChildScrollView ve ListView Kullanımı',
+    summary: lesson17Summary,
+    lessonPage: const Lesson17(),
   ),
 ];
