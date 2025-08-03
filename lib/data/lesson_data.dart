@@ -30,6 +30,10 @@ import '../dersler/lesson13.dart';
 import '../summary/lesson13_summary.dart';
 import '../dersler/lesson14/lesson14.dart';
 import '../summary/lesson14_summary.dart';
+import '../dersler/lesson15.dart';
+import '../summary/lesson15_summary.dart';
+import '../dersler/lesson16/lesson16.dart';
+import '../summary/lesson16_summary.dart';
 
 final List<Lesson> lessonList = [
   Lesson(
@@ -112,8 +116,20 @@ final List<Lesson> lessonList = [
   ),
   Lesson(
     title: '14. Ders',
-    subtitle: 'Flutter Projelerinde Klasör ve Dosya Organizasyonu: Modüler Yapı ve Bağlantılar',
+    subtitle: 'Flutter’da Modüler Widget Yapısı ve Dosya Organizasyonu',
     summary: lesson14Summary,
     lessonPage: const Lesson14(),
+  ),
+  Lesson(
+    title: '15. Ders',
+    subtitle: 'Flutter’da Expanded Widget ile Esnek ve Orantılı Layout Tasarımı',
+    summary: lesson15Summary,
+    lessonPage: const Lesson15(),
+  ),
+  Lesson(
+    title: '16. Ders',
+    subtitle: 'Flutter da Scroll Edilebilir İçerik ve ListView ile Kart Listesi Oluşturma',
+    summary: lesson16Summary,
+    lessonPage: const Lesson16(),
   ),
 ];
