@@ -16,6 +16,14 @@ import '../dersler/lesson06.dart';
 import '../summary/lesson06_summary.dart';
 import '../dersler/lesson07.dart';
 import '../summary/lesson07_summary.dart';
+import '../dersler/lesson08.dart';
+import '../summary/lesson08_summary.dart';
+import '../dersler/lesson09.dart';
+import '../summary/lesson09_summary.dart';
+import '../dersler/lesson10.dart';
+import '../summary/lesson10_summary.dart';
+import '../dersler/lesson11.dart';
+import '../summary/lesson11_summary.dart';
 
 final List<Lesson> lessonList = [
   Lesson(
@@ -59,5 +67,29 @@ final List<Lesson> lessonList = [
     subtitle: 'Container ve Text Widgetı ile Merkezi İçerik Yerleşimi',
     summary: lesson07Summary,
     lessonPage: const Lesson07(),
+  ),
+   Lesson(
+    title: '8. Ders',
+    subtitle: 'Expanded Widget ile Esnek Alan Kullanımı ve Flex Özelliği',
+    summary: lesson08Summary,
+    lessonPage: const Lesson08(),
+  ),
+  Lesson(
+    title: '9. Ders',
+    subtitle: 'Flutter Text Widget ile Yazı Stili ve Ağırlık Ayarları Gösterimi',
+    summary: lesson09Summary,
+    lessonPage: const Lesson09(),
+  ),
+  Lesson(
+    title: '10. Ders',
+    subtitle: 'Flutter Text Widget ile Font Ağırlıklarını İnceleme',
+    summary: lesson10Summary,
+    lessonPage: const Lesson10(),
+  ),
+  Lesson(
+    title: '11. Ders',
+    subtitle: 'Flutter da TextStyle ile Yazı Kalınlıklarını (FontWeight) Görselleştirme',
+    summary: lesson11Summary,
+    lessonPage: const Lesson11(),
   ),
 ];
