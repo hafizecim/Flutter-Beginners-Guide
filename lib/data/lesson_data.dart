@@ -24,6 +24,8 @@ import '../dersler/lesson10.dart';
 import '../summary/lesson10_summary.dart';
 import '../dersler/lesson11.dart';
 import '../summary/lesson11_summary.dart';
+import '../dersler/lesson12.dart';
+import '../summary/lesson12_summary.dart';
 
 final List<Lesson> lessonList = [
   Lesson(
@@ -91,5 +93,11 @@ final List<Lesson> lessonList = [
     subtitle: 'Flutter da TextStyle ile Yazı Kalınlıklarını (FontWeight) Görselleştirme',
     summary: lesson11Summary,
     lessonPage: const Lesson11(),
+  ),
+  Lesson(
+    title: '12. Ders',
+    subtitle: 'Flutter da Container içinde farklı BoxFit özellikleriyle resim gösterimi',
+    summary: lesson12Summary,
+    lessonPage: const Lesson12(),
   ),
 ];
