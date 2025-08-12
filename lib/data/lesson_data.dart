@@ -1,6 +1,3 @@
-import 'package:flutter_tutorial_beginner/dersler/lesson02.dart';
-import 'package:flutter_tutorial_beginner/summary/lesson06_summary.dart';
-
 import '../models/lesson_model.dart';
 import '../dersler/lesson01.dart';
 import '../summary/lesson01_summary.dart';
@@ -40,6 +37,12 @@ import '../dersler/lesson18.dart';
 import '../summary/lesson18_summary.dart';
 import '../dersler/lesson19.dart';
 import '../summary/lesson19_summary.dart';
+import '../dersler/lesson20.dart';
+
+import '../dersler/lesson21.dart';
+import '../summary/lesson21_summary.dart';
+import '../dersler/lesson22.dart';
+import '../summary/lesson22_summary.dart';
 
 
 final List<Lesson> lessonList = [
@@ -157,4 +160,24 @@ final List<Lesson> lessonList = [
     summary: lesson19Summary,
     lessonPage: const Lesson19(),
   ),
+   Lesson(
+    title: '20. Ders',
+    subtitle: 'Flutter da Yatay Scroll: SingleChildScrollView ve ListView Kullanımı',
+    summary: lesson10Summary,
+    lessonPage: const Lesson20(),
+  ),
+  Lesson(
+    title: '21. Ders',
+    subtitle: 'Flutter ListView.builder ile Dinamik Liste Oluşturma',
+    summary: lesson21Summary,
+    lessonPage: const Lesson21(),
+  ),
+  Lesson(
+    title: '22. Ders',
+    subtitle: 'Flutter ListView.builder ile Dinamik Kart Listesi Oluşturma',
+    summary: lesson22Summary,
+    lessonPage: const Lesson22(),
+  ),
 ];
+
+
