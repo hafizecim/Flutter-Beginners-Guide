@@ -38,11 +38,13 @@ import '../summary/lesson18_summary.dart';
 import '../dersler/lesson19.dart';
 import '../summary/lesson19_summary.dart';
 import '../dersler/lesson20.dart';
-
+import '../summary/lesson20_summary.dart';
 import '../dersler/lesson21.dart';
 import '../summary/lesson21_summary.dart';
 import '../dersler/lesson22.dart';
 import '../summary/lesson22_summary.dart';
+import '../dersler/lesson23.dart';
+import '../summary/lesson23_summary.dart';
 
 
 final List<Lesson> lessonList = [
@@ -162,21 +164,27 @@ final List<Lesson> lessonList = [
   ),
    Lesson(
     title: '20. Ders',
-    subtitle: 'Flutter da Yatay Scroll: SingleChildScrollView ve ListView Kullanımı',
-    summary: lesson10Summary,
+    subtitle: 'Drawer ve Clip Widget ları ile Özel Arayüz Tasarımı',
+    summary: lesson20Summary,
     lessonPage: const Lesson20(),
   ),
   Lesson(
     title: '21. Ders',
-    subtitle: 'Flutter ListView.builder ile Dinamik Liste Oluşturma',
+    subtitle: 'Stack ve Positioned Widget ları ile Katmanlı Yerleşim',
     summary: lesson21Summary,
     lessonPage: const Lesson21(),
   ),
   Lesson(
     title: '22. Ders',
-    subtitle: 'Flutter ListView.builder ile Dinamik Kart Listesi Oluşturma',
+    subtitle: 'Drawer ve Clip Widget ları ile Zengin Arayüz Tasarımı',
     summary: lesson22Summary,
     lessonPage: const Lesson22(),
+  ),
+  Lesson(
+    title: '22. Ders',
+    subtitle: 'Flutter Drawer ve Clip Widget ile Görsel Arayüz Tasarımı',
+    summary: lesson23Summary,
+    lessonPage: const Lesson23(),
   ),
 ];
 
