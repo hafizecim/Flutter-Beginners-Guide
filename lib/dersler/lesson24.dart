@@ -80,6 +80,27 @@ class Lesson24 extends StatelessWidget {
                 label: const Text("DENEME 5 🎨"),
                 icon: const Icon(Icons.phone_android),
               ),
+              const Text("data"),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                ElevatedButton.icon(
+                onPressed: () {},
+                label: const Text("DENEME 6 🎈"),
+                icon: const Icon(Icons.live_tv_outlined),
+              ),
+              ElevatedButton.icon(
+                onPressed: () {},
+                label: const Text("DENEME 7 🎁"),
+                icon: const Icon(Icons.access_alarm),
+              ),
+              ElevatedButton.icon(
+                onPressed: () {},
+                label: const Text("DENEME 8 🎀"),
+                icon: const Icon(Icons.keyboard_double_arrow_up_outlined),
+              ),
+
+              ],),
             ],
           ),
         ),

@@ -47,6 +47,8 @@ import '../dersler/lesson23.dart';
 import '../summary/lesson23_summary.dart';
 import '../dersler/lesson24.dart';
 import '../summary/lesson24_summary.dart';
+import '../dersler/lesson25.dart';
+import '../summary/lesson25_summary.dart';
 
 
 final List<Lesson> lessonList = [
@@ -193,6 +195,12 @@ final List<Lesson> lessonList = [
     subtitle: 'Flutter’da Theme Kullanımı ve Özelleştirilmiş Butonlar',
     summary: lesson24Summary,
     lessonPage: const Lesson24(),
+  ),
+  Lesson(
+    title: '25. Ders',
+    subtitle: 'Flutter ThemeData & TextTheme Kullanımı',
+    summary: lesson25Summary,
+    lessonPage: const Lesson25(),
   ),
 ];
 
