@@ -8,32 +8,35 @@ class Lesson24 extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        // 📌 Uygulamanın genel tema ayarları
         appBarTheme: AppBarTheme(
-          backgroundColor: Colors.amber[600],
+          backgroundColor: Colors.pinkAccent, // Neşeli pembe AppBar rengi
           centerTitle: true,
         ),
-        scaffoldBackgroundColor: Colors.amber[100],
-        textTheme: TextTheme(bodyMedium: TextStyle(color: Colors.black)),
-        floatingActionButtonTheme: FloatingActionButtonThemeData(
-          foregroundColor: Colors.red,
-          //İÇERİK RENGİ
-          backgroundColor: Colors.blue,
-          //ARKAPLAN RENGİ
-          splashColor: Colors.deepOrange,
-          //ANİMASYONLU ÜZERİNE BASINCA ÇALIŞAN KOMUT
-          elevation: 3,
-          //GÖLGE
+        scaffoldBackgroundColor: Colors.yellow[100], // Arka planı açık sarı
+        textTheme: const TextTheme(
+          bodyMedium: TextStyle(color: Colors.black87), // Yazılar siyah ton
         ),
+
+        // 📌 Floating Action Button (FAB) teması
+        floatingActionButtonTheme: const FloatingActionButtonThemeData(
+          foregroundColor: Colors.white, // FAB ikon rengi
+          backgroundColor: Colors.greenAccent, // FAB arka plan rengi (canlı yeşil)
+          splashColor: Colors.orange, // Basınca çıkan dalga efekti
+          elevation: 4, // Gölge yüksekliği
+        ),
+
+        // 📌 ElevatedButton (buton) teması
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
             iconAlignment: IconAlignment.end,
-            backgroundColor: Colors.red,
-            foregroundColor: Colors.cyan,
-            iconColor: Colors.lime,
-            side: BorderSide(
+            backgroundColor: Colors.deepPurpleAccent, // Buton arka planı (mor ton)
+            foregroundColor: Colors.white, // Yazı ve ikon rengi beyaz
+            iconColor: Colors.amberAccent, // İkon rengi sarı
+            side: const BorderSide(
               style: BorderStyle.solid,
-              width: 5,
-              color: Colors.blue,
+              width: 3,
+              color: Colors.pink, // Kenarlık rengi pembe
               strokeAlign: BorderSide.strokeAlignCenter,
             ),
           ),
@@ -41,48 +44,48 @@ class Lesson24 extends StatelessWidget {
       ),
       title: 'Material App',
       home: Scaffold(
-        appBar: AppBar(title: const Text('Material App Bar')),
+        appBar: AppBar(title: const Text('Material App Bar 🎉')), // Başlık daha eğlenceli
         body: Center(
           child: Column(
             children: [
-              Text("KUZEM"),
-              ElevatedButton(onPressed: () {}, child: Text("DENEME")),
-              Text("data"),
+              const Text("KUZEM 💡"), // Emoji ile renklendirme
+              ElevatedButton(onPressed: () {}, child: const Text("DENEME 🚀")),
+              const Text("data"),
               ElevatedButton.icon(
                 onPressed: () {},
-                label: Text("DENEME 2"),
-                icon: Icon(Icons.phone_android),
+                label: const Text("DENEME 2 🎃"),
+                icon: const Icon(Icons.phone_android),
                 iconAlignment: IconAlignment.end,
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.grey,
-                  foregroundColor: Colors.black,
+                  backgroundColor: Colors.lightBlueAccent, // Canlı mavi
+                  foregroundColor: Colors.white, // Yazılar beyaz
                 ),
               ),
-              Text("data"),
+              const Text("data"),
               ElevatedButton.icon(
                 onPressed: () {},
-                label: Text("DENEME 3"),
-                icon: Icon(Icons.phone_android),
+                label: const Text("DENEME 3 🎶"),
+                icon: const Icon(Icons.phone_android),
                 iconAlignment: IconAlignment.start,
               ),
-              Text("data"),
+              const Text("data"),
               ElevatedButton.icon(
                 onPressed: () {},
-                label: Text("DENEME 4"),
-                icon: Icon(Icons.phone_android),
+                label: const Text("DENEME 4 🌟"),
+                icon: const Icon(Icons.phone_android),
               ),
-              Text("data"),
+              const Text("data"),
               ElevatedButton.icon(
                 onPressed: () {},
-                label: Text("DENEME 5"),
-                icon: Icon(Icons.phone_android),
+                label: const Text("DENEME 5 🎨"),
+                icon: const Icon(Icons.phone_android),
               ),
             ],
           ),
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
-          child: Icon(Icons.add),
+          child: const Icon(Icons.add),
         ),
       ),
     );
