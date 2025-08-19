@@ -45,6 +45,8 @@ import '../dersler/lesson22.dart';
 import '../summary/lesson22_summary.dart';
 import '../dersler/lesson23.dart';
 import '../summary/lesson23_summary.dart';
+import '../dersler/lesson24.dart';
+import '../summary/lesson24_summary.dart';
 
 
 final List<Lesson> lessonList = [
@@ -181,10 +183,16 @@ final List<Lesson> lessonList = [
     lessonPage: const Lesson22(),
   ),
   Lesson(
-    title: '22. Ders',
+    title: '23. Ders',
     subtitle: 'Flutter Drawer ve Clip Widget ile Görsel Arayüz Tasarımı',
     summary: lesson23Summary,
     lessonPage: const Lesson23(),
+  ),
+  Lesson(
+    title: '24. Ders',
+    subtitle: 'Flutter’da Theme Kullanımı ve Özelleştirilmiş Butonlar',
+    summary: lesson24Summary,
+    lessonPage: const Lesson24(),
   ),
 ];
 
