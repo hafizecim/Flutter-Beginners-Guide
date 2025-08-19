@@ -17,3 +17,4 @@ Bu derste Flutter'da tema özelleştirmeleri ve farklı buton yapılandırmalar�
   - FloatingActionButton: Ekleme simgesi (add) ile bir FAB tanımlanmıştır.
 
 Bu yapı, Flutter’da tema kullanarak buton ve app bar gibi bileşenlerin
+''';

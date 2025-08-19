@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart'
+import 'package:flutter/material.dart';
 
 class Lesson24 extends StatelessWidget {
   const Lesson24({super.key});
