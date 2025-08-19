@@ -10,62 +10,58 @@ class Lesson25 extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
         appBarTheme: AppBarTheme(
-          backgroundColor: Colors.amber[600],
+          backgroundColor: Colors.amber[300], // Daha soft amber
           centerTitle: true,
         ),
-        scaffoldBackgroundColor: Colors.amber[100],
+        scaffoldBackgroundColor: Colors.amber[50], // Açık pastel arka plan
         textTheme: TextTheme(
           bodySmall: TextStyle(
             fontSize: 12,
             fontWeight: FontWeight.w200,
-            color: Colors.lightBlue,
+            color: Colors.lightBlue[300], // Pastel mavi
           ),
           bodyMedium: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.w600,
-            color: Colors.red,
+            color: Colors.red[300], // Soft kırmızı
           ),
           bodyLarge: TextStyle(
             fontSize: 30,
             fontWeight: FontWeight.w600,
-            color: Colors.blueGrey,
+            color: Colors.blueGrey[300], // Pastel mavi-gri
           ),
           titleSmall: TextStyle(
             fontSize: 12,
             fontWeight: FontWeight.w200,
-            color: Colors.blue,
+            color: Colors.blue[300], // Soft mavi
           ),
           titleMedium: TextStyle(
             fontSize: 18,
             fontWeight: FontWeight.w400,
-            color: Colors.blue,
+            color: Colors.blue[400],
           ),
           titleLarge: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.w600,
-            color: Colors.blue,
+            color: Colors.blue[400],
           ),
         ),
         floatingActionButtonTheme: FloatingActionButtonThemeData(
-          foregroundColor: Colors.red,
-          //İÇERİK RENGİ
-          backgroundColor: Colors.blue,
-          //ARKAPLAN RENGİ
-          splashColor: Colors.deepOrange,
-          //ANİMASYONLU ÜZERİNE BASINCA ÇALIŞAN KOMUT
+          foregroundColor: Colors.white, // Daha soft kontrast için beyaz
+          backgroundColor: Colors.lightBlue[300], // Pastel mavi
+          splashColor: Colors.orange[200], // Soft turuncu
           elevation: 3,
-          //GÖLGE
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
             iconAlignment: IconAlignment.end,
-            backgroundColor: Colors.red,
-            foregroundColor: Colors.cyan,
-            iconColor: Colors.lime,
+            backgroundColor: Colors.pink[200], // Soft pembe
+            foregroundColor: Colors.white, // Soft kontrast
+            iconColor: Colors.yellow[200], // Pastel sarı
             side: BorderSide(
               style: BorderStyle.solid,
-              width: 5,
-              color: Colors.blue,
+              width: 3,
+              color: Colors.blue[200]!, // Soft mavi sınır
               strokeAlign: BorderSide.strokeAlignCenter,
             ),
           ),
@@ -86,8 +82,8 @@ class Lesson25 extends StatelessWidget {
                 icon: Icon(Icons.phone_android),
                 iconAlignment: IconAlignment.end,
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.grey,
-                  foregroundColor: Colors.black,
+                  backgroundColor: Colors.grey[300], // Soft gri
+                  foregroundColor: Colors.black54, // Hafif siyah
                 ),
               ),
               Text("data"),
@@ -109,14 +105,15 @@ class Lesson25 extends StatelessWidget {
                 label: Text("DENEME 5"),
                 icon: Icon(Icons.phone_android),
               ),
+              Text("dataBODY"),
               Container(
                 width: 200,
-                color: Colors.orange,
+                color: Colors.orange[300], // Soft turuncu
                 child: ListTile(
                   title: Text("data"),
                   subtitle: Text("data22"),
-                  leading: Icon(Icons.bookmark),
-                  trailing: Icon(Icons.arrow_circle_right),
+                  leading: Icon(Icons.bookmark, color: Colors.deepPurpleAccent),
+                  trailing: Icon(Icons.arrow_circle_right, color: Colors.deepPurpleAccent),
                 ),
               ),
             ],
