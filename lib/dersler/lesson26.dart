@@ -13,7 +13,7 @@ class Lesson26 extends StatelessWidget {
     double sayi1 = 3;
     String sayi2 = "3";
     String sayi3 = '3';
-/*
+
     return Scaffold(
       appBar: AppBar(title: Text(baslik)),
       body: Container(
@@ -37,8 +37,7 @@ class Lesson26 extends StatelessWidget {
         ),
       ),
     );
-    */
-    return Scaffold(
+    /*return Scaffold(
       appBar: AppBar(title: Text(baslik)),
       body: Container(
         width: genislik,
@@ -73,6 +72,6 @@ class Lesson26 extends StatelessWidget {
           ],
         ),
       ),
-    );
+    );*/
   }
 }
