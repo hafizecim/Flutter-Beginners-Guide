@@ -49,6 +49,8 @@ import '../dersler/lesson24.dart';
 import '../summary/lesson24_summary.dart';
 import '../dersler/lesson25.dart';
 import '../summary/lesson25_summary.dart';
+import '../dersler/lesson26.dart';
+import '../summary/lesson26_summary.dart';
 
 
 final List<Lesson> lessonList = [
@@ -201,6 +203,12 @@ final List<Lesson> lessonList = [
     subtitle: 'Flutter ThemeData & TextTheme Kullanımı',
     summary: lesson25Summary,
     lessonPage: const Lesson25(),
+  ),
+  Lesson(
+    title: '26. Ders',
+    subtitle: 'Flutter ThemeData & TextTheme Kullanımı',
+    summary: lesson26Summary,
+    lessonPage: const Lesson26(),
   ),
 ];
 
