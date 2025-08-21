@@ -9,6 +9,7 @@ class Lesson27 extends StatelessWidget {
     List<String> AdSoyad = <String>["Ahmet ÖZTÜRK", "Ali AKAY", "Mehmet CAN"];
     double genislik = MediaQuery.of(context).size.width;
     double yukseklik = MediaQuery.of(context).size.height;
+
     return Scaffold(
       body: Container(
         width: genislik,
@@ -22,6 +23,11 @@ class Lesson27 extends StatelessWidget {
               width: genislik / 3,
               height: yukseklik / 5,
               color: Colors.blue,
+              child: ListTile(
+                title: Text("KUZEM"),
+                subtitle: Text("DENEME"),
+                leading: Icon(Icons.arrow_right),
+              ),
             ),
             Container(
               width: genislik / 3,
