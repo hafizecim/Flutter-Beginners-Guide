@@ -13,8 +13,8 @@ class Lesson26 extends StatelessWidget {
     double sayi1 = 3;
     String sayi2 = "3";
     String sayi3 = '3';
-
-    /*return Scaffold(
+/*
+    return Scaffold(
       appBar: AppBar(title: Text(baslik)),
       body: Container(
         width: genislik,
@@ -36,30 +36,37 @@ class Lesson26 extends StatelessWidget {
           ),
         ),
       ),
-    );*/
+    );
+    */
     return Scaffold(
       appBar: AppBar(title: Text(baslik)),
       body: Container(
         width: genislik,
         height: yukseklik,
         color: Colors.blueGrey[100],
+        padding: EdgeInsets.all(10),
         child: DataTable(
-
-          columnSpacing: 20,
+          columnSpacing: 10,
+          headingRowColor: WidgetStatePropertyAll(Colors.blue),
           headingRowHeight: 100,
+          headingTextStyle: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.w900,
+            letterSpacing: 4,
+          ),
+          dataRowColor: WidgetStatePropertyAll(Colors.blue[100]),
           border: TableBorder.all(
-            width: 2,
+            width: 1,
             style: BorderStyle.solid,
             color: Colors.black,
           ),
           columns: [
-
-            
             DataColumn(label: Text("Sıra No")),
             DataColumn(label: Text("Adınız Soyadınız")),
           ],
           rows: [
             DataRow(
+              color: WidgetStatePropertyAll(Colors.greenAccent),
               cells: [DataCell(Text("1")), DataCell(Text("Ahmet ÖZTÜRK"))],
             ),
             DataRow(cells: [DataCell(Text("2")), DataCell(Text("adsasd"))]),
