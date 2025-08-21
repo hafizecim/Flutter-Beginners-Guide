@@ -53,6 +53,8 @@ import '../dersler/lesson26.dart';
 import '../summary/lesson26_summary.dart';
 import '../dersler/lesson27.dart';
 import '../summary/lesson27_summary.dart';
+import '../dersler/lesson28.dart';
+import '../summary/lesson28_summary.dart';
 
 
 final List<Lesson> lessonList = [
@@ -217,6 +219,12 @@ final List<Lesson> lessonList = [
     subtitle: 'GridView ile Izgara Yapısı Oluşturma',
     summary: lesson27Summary,
     lessonPage: const Lesson27(),
+  ),
+  Lesson(
+    title: '28. Ders',
+    subtitle: 'GridView ile Izgara Yapısı Rastgele Renkler',
+    summary: lesson28Summary,
+    lessonPage: const Lesson28(),
   ),
 ];
 
