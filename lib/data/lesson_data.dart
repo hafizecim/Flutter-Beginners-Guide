@@ -51,6 +51,8 @@ import '../dersler/lesson25.dart';
 import '../summary/lesson25_summary.dart';
 import '../dersler/lesson26.dart';
 import '../summary/lesson26_summary.dart';
+import '../dersler/lesson27.dart';
+import '../summary/lesson27_summary.dart';
 
 
 final List<Lesson> lessonList = [
@@ -206,9 +208,15 @@ final List<Lesson> lessonList = [
   ),
   Lesson(
     title: '26. Ders',
-    subtitle: 'Flutter ThemeData & TextTheme Kullanımı',
+    subtitle: 'DataTable ile Dinamik Veri Sunumu',
     summary: lesson26Summary,
     lessonPage: const Lesson26(),
+  ),
+  Lesson(
+    title: '27. Ders',
+    subtitle: 'GridView ile Izgara Yapısı Oluşturma',
+    summary: lesson27Summary,
+    lessonPage: const Lesson27(),
   ),
 ];
 
